@@ -15,7 +15,6 @@ public class DocenteInvestigador extends Docente {
         return base + bono;
     }
 
-    // SOBRECARGA
     public double calcularPago(double bonoExtra) {
         return calcularPago() + bonoExtra;
     }
