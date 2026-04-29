@@ -24,18 +24,14 @@ public class Main {
 
         System.out.print("Publicaciones: ");
         obj.setPublicaciones(sc.nextInt());
-
-        // 🔥 POLIMORFISMO
         PersonaAcademica persona = obj;
 
-        System.out.println("\n--- RESULTADO ---");
 
         persona.mostrarDatos();
         persona.describirRol();
 
         System.out.println("Pago final: $" + persona.calcularPago());
 
-        // método sobrecargado
         System.out.println("Pago con bono extra: $" + obj.calcularPago(50));
     }
 }
